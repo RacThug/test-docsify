@@ -12,6 +12,7 @@ http://175.41.172.186:5000
 
 - url: `/list` 
 - method: `GET`
+- example: `http://175.41.172.186:5000/list`
 - response: 
 ``` json
 {
@@ -114,6 +115,7 @@ http://175.41.172.186:5000
 
 - url: `/detail/{id}` 
 - method: `GET`
+- example: `http://175.41.172.186:5000/detail/1`
 - response: 
 ``` json
 {
@@ -167,8 +169,70 @@ http://175.41.172.186:5000
 - url: `/thumbnail/{id}`
 
 
-### Story Image Image
+### Story Image
 
 > Mendapatkan Image Cerita
 
 - url: `/images/{idS}/{id}`
+
+
+### Search Story
+
+> Mencari Cerita dengan Keyword
+
+- url: `/story/search?title={keyword}`
+- method: `GET`
+- example: `http://175.41.172.186:5000/story/search?title=adil`
+- response: 
+``` json
+[
+    {
+        "id": "3",
+        "title": "Berbagi dengan Adil",
+        "thumbnailId": "3",
+        "musicId": "1",
+        "musicInfo": "Positive Ukulele by Sokolovsky Music",
+        "illustrator": "Magriet Brink",
+        "writer": "Hamsa Venkatakrishnan, Penelope Smith",
+        "translator": "Franciscus Dondy",
+        "publisher": "Pratham Books",
+        "originalUrl": "https://storyweaver.org.in/stories/337835-sharing-equally",
+        "copyright": "CC-BY-4.0",
+        "description": "Sebuah cerita tentang matematika dan kue untuk belajar membagi dengan adil meskipun hal itu rumit",
+        "content": [
+            {
+                "pictureId": "1",
+                "pictureAttr": "https://storyweaver.org.in/illustrations/22366-three-kids-working-on-a-garden",
+                "story": "Sabtu pagi ini cuaca panas terik di peternakan. Maya, Duksi, dan Dubi membantu Mama K di kebunnya. Anak- anak berkegiatan sepanjang hari. Mereka memupuk tanaman di tanah dengan kompos, menyiangi rumput liar, dan menyirami tanaman. Mereka memanen buah-buahan dan sayur- sayuran yang sudah matang. Hari ini mereka mendapatkan panen stroberi, bayam, dan wortel yang segar. Mama K selalu menawarkan berbagai macam suguhan kepada anak-anak sebagai ucapan terima kasih atas bantuan mereka. Kue, coklat, permen berbentuk ular, dan juga apel, pir, atau jeruk. Mama K hanya punya satu aturan, \"Berbagilah dengan adil!\" Anak-anak menjadi paham bahwa mereka harus membagi berbagai macam kudapan dengan adil, sehingga masing-masing mendapatkan bagian yang sama. Hari ini Mama K membua kue tart stroberi yang dioles dengan lapisan gula warna merah muda dan dihiasi dengan sejenis buah buni dari kebunnya. Anak-anak menunggu kudapan sambil duduk di rerumputan. \"Ini dia!\" kata Mama K sambil tersenyum, \"tapi jangan lupa aturannya, masing-masing harus mendapat bagian yang sama. Berbagilah dengan adil. Dan jangan bertengkar!\""
+            },
+            {
+                "pictureId": "2",
+                "pictureAttr": "https://storyweaver.org.in/illustrations/22370-kids-looking-at-the-cake",
+                "story": "Maya-lah yang mulai membagi kue itu. Dia menggaris lapisan gula dengan pisaunya sedangkan yang lain memperhatikannya. Dia belum mulai memotong kue itu. Dia menunggu teman-temannya memberitahunya apakah garis yang dibuatnya sudah benar. \"Sepertinya, aku akan memotong kuenya di dua tempat,\" kata Maya, \"di sini dan di sana, dengan begitu kita akan mendapatkan tiga potong kue yang sama.\" \"Asal bicara,\" seru Duksi, \"bagian tengah terlalu besar!\" Maya mengangkat bahunya sambil tertawa. Kemudian, dia meminta Duksi untuk mencoba memotong kue itu."
+            },
+            {
+                "pictureId": "3",
+                "pictureAttr": "https://storyweaver.org.in/illustrations/22372-kids-dividing-up-the-cake",
+                "story": "\"Berikan pisaunya kepadaku. Aku akan memotongnya. Ini sangat mudah!\" teriak Duksi. Dia menghapus garis yang Maya buat di atas lapisan gula dan menjilat jemarinya. Dia menggambar garis di tengah kue, kemudian membuat garis lain di sampingnya. \"Lihatlah, ini tiga bagianku!\" \"Tapi itu tidak adil!\" Maya dan Dubi memprotes. \"Bagilah dengan cara yang adil.\" kata Dubi, \"bagian-bagian itu harus berukuran dan berbentuk sama.\" \"Mengapa kamu tidak mencobanya, Einstein?\" celetuk Duksi sambil tertawa. \"Kami bertaruh bahwa kamu tidak akan bisa!\""
+            },
+            {
+                "pictureId": "4",
+                "pictureAttr": "https://storyweaver.org.in/illustrations/22377-kids-successfully-divide-cake",
+                "story": "\"Aku lebih memilih jika kue ini berbentuk kotak atau persegi, itu akan lebih mudah!\" Dubi menghela nafas. \"Akan lebih mudah juga untuk berbagi kue bundar ini jika kita berempat.\" sambung Maya. Tiba-tiba sebuah gambar muncul di kepala Dubi. Gambar itu berbentuk lambang perak yang menempel di depan truk merah milik ayahnya. Setiap hari minggu, Dubi membantu ayahnya mencuci truk merah dan mengelap lambang itu sampai mengkilap. \"Eureka! Aku menemukannya!\" teriak Dubi. \"Ah, Dubi, kamu selalu mengejutkan kami.\" bisik Duksi. \"Sudahkah kamu tahu apa yang akan kaulakukan?\" tanya Maya. Dubi tersenyum. Untuk sementara, dia memilih menyimpannya untuk diri sendiri. Rahasia. Dia akan menceritakan hal itu nanti kepada ayahnya. Dia menggunakan pisau untuk menghapus garis yang dibuat Duksi. Kemudian ia menggambar tiga garis di atas lapisan gula. Garis itu terlihat seperti lambang truk ayahnya yang membagi kue menjadi tiga bagian yang sama."
+            },
+            {
+                "pictureId": "5",
+                "pictureAttr": "https://storyweaver.org.in/illustrations/22378-mother-serves-juice",
+                "story": "Mama K bergabung dengan mereka dengan membawa tiga gelas jus stroberi di atas nampan. \"Lihat, Mama K, Dubi telah menemukan cara memotong kue menjadi tiga bagian yang sama.\" Maya menjelaskan. \"Tiga bagian yang sama? Bagus sekali Dubi!\" teriak Mama K. \"Kalian berhasil membagi kue dengan adil. Mama bangga dengan kalian. Sekarang, potonglah kue itu dan minumlah jus stroberi ini. Kemudian waktunya untuk pulang. Mama akan memberikan piring untuk membawa pulang bagian kue kalian.\" Maya memotong kue mengikuti garis yang digambar Dubi yang membagi kue menjadi tiga bagian adil. Anak-anak menumpuk irisan-irisan kue di atas satu sama lain sambil tertawa untuk memastikan bahwa semua irisan sama rata."
+            },
+            {
+                "pictureId": "6",
+                "pictureAttr": "https://storyweaver.org.in/illustrations/22382-mother-kids-are-excited-to-see-his-father",
+                "story": "Ayah Dubi datang menjemput anak-anak. Dia berlari menemui ayahnya, tidak sabar untuk segera bercerita bagaimana lambang truk ayahnya telah membantunya untuk memecahkan masalah yang pelik."
+            }
+        ]
+    }
+]
+```
+
+

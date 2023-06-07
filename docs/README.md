@@ -10,7 +10,7 @@ http://175.41.172.186:5000
 
 > Mendapatkan daftar cerita
 
-- url: `/list` 
+- URL: `/list` 
 - method: `GET`
 - example: `http://175.41.172.186:5000/list`
 - response: 
@@ -27,7 +27,7 @@ http://175.41.172.186:5000
             "writer": "Jaco Jacobs",
             "translator": "Yustin S",
             "publisher": "Pratham Books",
-            "originalUrl": "https://storyweaver.org.in/stories/131661-how-zebra-got-his-stripes",
+            "originalURL": "https://storyweaver.org.in/stories/131661-how-zebra-got-his-stripes",
             "copyright": "CC-BY-4.0",
             "description": "Zebra sang penyelamat yang berani",
             "content": [
@@ -68,7 +68,7 @@ http://175.41.172.186:5000
             "writer": "Yasaswini Sampathkumar",
             "translator": "Muhammad Dirgantara Esa Valentino Am",
             "publisher": "Pratham Books",
-            "originalUrl": "https://storyweaver.org.in/stories/360284-berapa-berat-udara",
+            "originalURL": "https://storyweaver.org.in/stories/360284-berapa-berat-udara",
             "copyright": "CC-BY-4.0",
             "description": "Lakshmi dan teman sekelasnya mencari tahu apakah udara memiliki berat",
             "content": [
@@ -113,7 +113,7 @@ http://175.41.172.186:5000
 
 > Mendapatkan detail cerita
 
-- url: `/detail/{id}` 
+- URL: `/detail/{id}` 
 - method: `GET`
 - example: `http://175.41.172.186:5000/detail/1`
 - response: 
@@ -128,7 +128,7 @@ http://175.41.172.186:5000
     "writer": "Jaco Jacobs",
     "translator": "Yustin S",
     "publisher": "Pratham Books",
-    "originalUrl": "https://storyweaver.org.in/stories/131661-how-zebra-got-his-stripes",
+    "originalURL": "https://storyweaver.org.in/stories/131661-how-zebra-got-his-stripes",
     "copyright": "CC-BY-4.0",
     "description": "Zebra sang penyelamat yang berani",
     "content": [
@@ -162,25 +162,11 @@ http://175.41.172.186:5000
 ```
 
 
-### Story Thumbnail Image
-
-> Mendapatkan Thumbnail Cerita
-
-- url: `/thumbnail/{id}`
-
-
-### Story Image
-
-> Mendapatkan Image Cerita
-
-- url: `/images/{idS}/{id}`
-
-
 ### Search Story
 
 > Mencari Cerita dengan Keyword
 
-- url: `/story/search?title={keyword}`
+- URL: `/story/search?title={keyword}`
 - method: `GET`
 - example: `http://175.41.172.186:5000/story/search?title=adil`
 - response: 
@@ -196,7 +182,7 @@ http://175.41.172.186:5000
         "writer": "Hamsa Venkatakrishnan, Penelope Smith",
         "translator": "Franciscus Dondy",
         "publisher": "Pratham Books",
-        "originalUrl": "https://storyweaver.org.in/stories/337835-sharing-equally",
+        "originalURL": "https://storyweaver.org.in/stories/337835-sharing-equally",
         "copyright": "CC-BY-4.0",
         "description": "Sebuah cerita tentang matematika dan kue untuk belajar membagi dengan adil meskipun hal itu rumit",
         "content": [
@@ -234,5 +220,33 @@ http://175.41.172.186:5000
     }
 ]
 ```
+
+
+### Add Review
+
+> Menambahkan Review pada Cerita
+
+- URL: `/review`
+- Method: `POST`
+- Headers:
+    - `Content-Type: application/json`
+- Body:
+    - JSON: `{"id": string, "name": string, "review": string}`
+
+
+### Story Thumbnail Image
+
+> Mendapatkan Thumbnail Cerita
+
+- URL: `/thumbnail/{id}`
+
+
+### Story Image
+
+> Mendapatkan Image Cerita
+
+- URL: `/images/{idS}/{id}`
+
+
 
 

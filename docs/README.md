@@ -2,7 +2,7 @@
 
 
 ## Base URL
-http://175.41.172.186:5000
+https://smiling-back-end-wdb.vercel.app
 
 ## Endpoints
 
@@ -12,7 +12,7 @@ http://175.41.172.186:5000
 
 - URL: `/list` 
 - method: `GET`
-- example: `http://175.41.172.186:5000/list`
+- example: `https://smiling-back-end-wdb.vercel.app/list`
 - response: 
 ``` json
 {
@@ -115,7 +115,7 @@ http://175.41.172.186:5000
 
 - URL: `/detail/{id}` 
 - method: `GET`
-- example: `http://175.41.172.186:5000/detail/1`
+- example: `https://smiling-back-end-wdb.vercel.app/detail/1`
 - response: 
 ``` json
 {
@@ -168,7 +168,7 @@ http://175.41.172.186:5000
 
 - URL: `/story/search?title={keyword}`
 - method: `GET`
-- example: `http://175.41.172.186:5000/story/search?title=adil`
+- example: `https://smiling-back-end-wdb.vercel.app/story/search?title=adil`
 - response: 
 ``` json
 [

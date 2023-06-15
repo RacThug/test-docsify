@@ -166,9 +166,9 @@ https://smiling-back-end-wdb.vercel.app
 
 > Mencari Cerita dengan Keyword
 
-- URL: `/story/search?title={keyword}`
+- URL: `/search?title={keyword}`
 - method: `GET`
-- example: `https://smiling-back-end-wdb.vercel.app/story/search?title=adil`
+- example: `https://smiling-back-end-wdb.vercel.app/search?title=adil`
 - response: 
 ``` json
 [
@@ -232,6 +232,41 @@ https://smiling-back-end-wdb.vercel.app
     - `Content-Type: application/json`
 - Body:
     - JSON: `{"id": string, "name": string, "review": string}`
+
+
+### Get Review
+
+> Mendapatkan Review Cerita
+
+- URL: `/getreview/{idStory}` 
+- method: `GET`
+- example: `https://smiling-back-end-wdb.vercel.app/getreview/1`
+- response:
+``` json
+[
+    {
+        "id_review": "U22qZqUP",
+        "id_story": "1",
+        "nama": "Diaz",
+        "tanggal": "14 Juni 2023",
+        "isi_review": "Nice Story"
+    },
+    {
+        "id_review": "YWGZQV3l",
+        "id_story": "1",
+        "nama": "Khalid",
+        "tanggal": "14 Juni 2023",
+        "isi_review": "Keren!"
+    },
+    {
+        "id_review": "nJQP6aM8",
+        "id_story": "1",
+        "nama": "RacThug",
+        "tanggal": "14 Juni 2023",
+        "isi_review": "keren sekali"
+    }
+]
+```
 
 
 ### Story Thumbnail Image
